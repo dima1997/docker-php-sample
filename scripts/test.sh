@@ -1,0 +1,1 @@
+docker compose exec server ./vendor/bin/phpunit --colors=always --testdox ./tests

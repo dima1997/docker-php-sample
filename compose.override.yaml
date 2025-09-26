@@ -1,0 +1,13 @@
+services:
+  server:
+    build:
+      context: .
+      target: development
+    develop:
+      watch:
+        - action: sync
+          path: ./src
+          target: /var/www/html
+        - action: sync
+          path: ./tests
+          target: /var/www/html/tests
